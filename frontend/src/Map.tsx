@@ -23,9 +23,18 @@ function GameMap() {
         // We'll wrap our components with an <Application> component to provide
         // the Pixi.js Application context
         <Application>
-            <BunnySprite />
+            <pixiContainer>
+                <BunnySprite />
+            </pixiContainer>
         </Application>
     );
 }
 
 export {GameMap};
+
+
+/*function Zoom() {
+    return (
+        
+    );
+}*/
