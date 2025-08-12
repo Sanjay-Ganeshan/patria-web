@@ -4,9 +4,11 @@ A minimal real-time client/server application for a custom 2D tabletop system ca
 
 ## Project Structure
 
+```
 patria-web/
 ├── frontend/ # React + Vite + TypeScript + Socket.IO client
 ├── backend/ # FastAPI + python-socketio
+```
 
 
 ## How It Works
