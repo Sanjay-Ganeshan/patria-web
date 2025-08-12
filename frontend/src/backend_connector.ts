@@ -23,6 +23,7 @@ function sendHeartbeat() {
     if (!connection) return;
 
     connection.emit("heartbeat");
+    console.log("beat");
 }
 
 export {connect, disconnect, sendHeartbeat};

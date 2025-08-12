@@ -14,7 +14,7 @@ class GameState:
     def __init__(self):
         self.client_id_to_username: dict[str, str] = {}
         self.username_to_client_id: dict[str, set[str]] = {}
-        self.last_message_per_client_id: dict[str, int] = {}
+        self.last_message_per_client_id: dict[str, float] = {}
 
     def heartbeat(self, client_id: str) -> None:
         self.last_message_per_client_id[client_id] = time.time()
